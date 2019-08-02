@@ -70,7 +70,7 @@ public class CameraActivityForImage extends CameraActivity implements ImageReade
     }
 
     @Override
-    protected void processImage() {
+    protected synchronized void processImage() {
         if (isPersronRecognize) {
             return;
         }
